@@ -9,18 +9,29 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "next": "16.2.10",
-    "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "gray-matter": "^4.0.3",
+    "marked": "^18.0.6",
+    "mixins": "^0.0.1",
+    "next": "^16.2.11",
+    "prop-types": "^15.8.1",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "react-icons": "^5.7.0",
+    "react-transition-group": "^4.4.5",
+    "sass": "^1.101.0",
+    "scrollreveal": "^4.0.9",
+    "styled-components": "^6.4.3"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
+    "@types/node": "^20.19.43",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@types/react-transition-group": "^4.4.12",
+    "@types/scrollreveal": "^0.0.11",
     "eslint": "^9",
     "eslint-config-next": "16.2.10",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5.9.3"
   }
 }
