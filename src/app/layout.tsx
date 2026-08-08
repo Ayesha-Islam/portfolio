@@ -1,65 +1,60 @@
-import type { Metadata, Viewport } from 'next';
-import localFont from 'next/font/local';
-import type { ReactNode } from 'react';
-
-import { SideLinks } from '@/components/side-links';
-import { SiteHeader } from '@/components/navigation/site-header';
-import { siteConfig } from '@/config/site';
-
-import './globals.css';
-
-const calibre = localFont({
-  src: [
-    { path: './fonts/Calibre-Regular.woff2', weight: '400', style: 'normal' },
-    { path: './fonts/Calibre-Medium.woff2', weight: '500', style: 'normal' },
-    { path: './fonts/Calibre-Semibold.woff2', weight: '600', style: 'normal' },
-  ],
-  display: 'swap',
-  variable: '--font-calibre',
+import { Geist, Geist_Mono } from "next/font/google";
+import "../styles/globals.css";
+import { Footer } from "@/components/Footer";
+import { Navbar } from "@/components/Navbar";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import type { Metadata } from "next";
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
 });
 
-const sfMono = localFont({
-  src: [
-    { path: './fonts/SFMono-Regular.woff2', weight: '400', style: 'normal' },
-    { path: './fonts/SFMono-RegularItalic.woff2', weight: '400', style: 'italic' },
-    {
-      path: './fonts/SFMono-SemiboldItalic.woff2',
-      weight: '600',
-      style: 'italic',
-    },
-  ],
-  display: 'swap',
-  variable: '--font-sf-mono',
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: {
-    default: `${siteConfig.name} | Full-Stack Developer`,
-    template: `%s | ${siteConfig.name}`,
+  title: "Ayesha Islam | Backend-Focused Full-Stack Developer",
+  description:
+    "Portfolio of Ayesha Islam, a backend-focused full-stack developer building reliable web applications with TypeScript, Node.js, PostgreSQL, Docker, and Next.js.",
+  keywords: [
+    "Ayesha Islam",
+    "Full-Stack Developer",
+    "Backend Developer",
+    "TypeScript",
+    "Node.js",
+    "PostgreSQL",
+    "Next.js",
+    "Faisalabad Software Developer",
+  ],
+  openGraph: {
+    title: "Ayesha Islam | Backend-Focused Full-Stack Developer",
+    description:
+      "I build reliable backend systems that turn fragmented data into useful products.",
+    type: "website",
   },
-  description: siteConfig.description,
-  applicationName: `${siteConfig.name} Portfolio`,
-  authors: [{ name: siteConfig.name }],
-  creator: siteConfig.name,
 };
 
-export const viewport: Viewport = {
-  colorScheme: 'dark',
-  themeColor: '#0a192f',
-};
 
-export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
-    <html lang="en" className={`${calibre.variable} ${sfMono.variable}`}>
-      <body>
-        <a className="skip-link" href="#content">
-          Skip to content
-        </a>
-        <SiteHeader />
-        <SideLinks />
-        <main id="content" className="site-main">
-          {children}
-        </main>
+    <html lang="en">
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        <Navbar />
+
+        <div className="flex-1">
+          {children} <Analytics /> <SpeedInsights />
+        </div>
+
+        <Footer />
       </body>
     </html>
   );

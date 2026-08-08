@@ -1,11 +1,23 @@
-# Ayesha Islam — Portfolio
+# Ayesha Islam — Developer Portfolio
 
-A recruiter-focused portfolio built with Next.js 16, React 19, TypeScript, and
-the App Router.
+A recruiter-focused portfolio for Ayesha Islam, a backend-focused full-stack
+developer based in Faisalabad, Pakistan.
 
-## Getting Started
+The site highlights two verified projects:
 
-Install dependencies and start the development server:
+- **Job Scraper Platform** — a tested job aggregation application that combines
+  244 listings from 73 companies across 8 sources.
+- **Developer Portfolio** — this responsive Next.js portfolio.
+
+## Tech stack
+
+- Next.js App Router
+- React and TypeScript
+- Tailwind CSS
+- Framer Motion
+- Vercel Analytics and Speed Insights
+
+## Run locally
 
 ```bash
 npm install
@@ -14,30 +26,14 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000).
 
-## Project structure
-
-```text
-src/
-├── app/                  # App Router routes, root layout, metadata, and globals
-├── components/
-│   ├── navigation/       # The interactive client boundary
-│   └── sections/         # Server-rendered portfolio sections
-├── config/               # Site-wide content and links
-├── content/journey/      # Local Markdown content
-└── lib/                  # Server-only content loading
-public/
-└── images/               # Static images rendered with next/image
-```
-
-`src/app/page.tsx` defines the home route. `src/app/layout.tsx` owns shared
-navigation, side links, fonts, global metadata, and the single `<main>`
-landmark. Components are Server Components by default; only the interactive
-header declares `'use client'`.
-
-## Verification
+## Production check
 
 ```bash
-npm run lint
-npx tsc --noEmit
 npm run build
 ```
+
+## Contact
+
+- GitHub: [Ayesha-Islam](https://github.com/Ayesha-Islam)
+- LinkedIn: [Ayesha Islam](https://www.linkedin.com/in/ayesha-islam-b4b988212/)
+- Email: [ayeshaislam.dev@gmail.com](mailto:ayeshaislam.dev@gmail.com)

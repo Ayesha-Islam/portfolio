@@ -1,0 +1,241 @@
+@import "tailwindcss";
+
+/* =========================
+   Design Tokens
+   ========================= */
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  /* Light mode (default) */
+  /* --background: #FFF2EB;
+  --surface: #FFE8CD;
+  --surface-soft: #FFDCDC;
+  --accent: #FFD6BA; */
+  --background: #0F0F0F;
+  --surface: #171717;
+  --surface-soft: #1E1E1E;
+
+  --foreground: #EDEDED;
+  --foreground-muted: #A1A1A1;
+
+  --accent: rgba(255, 214, 186, 0.15);
+  --border: rgba(255, 255, 255, 0.08);
+
+  /* --foreground: #1E1E1E;
+  --foreground-muted: #4A4A4A; */
+
+  /* --border: rgba(0, 0, 0, 0.06); */
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-surface-soft: var(--surface-soft);
+  --color-accent: var(--accent);
+  --color-border: var(--border);
+
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+}
+
+/* =========================
+   Dark Mode (intentional)
+   ========================= */
+
+.dark {
+  --background: #0F0F0F;
+  --surface: #171717;
+  --surface-soft: #1E1E1E;
+
+  --foreground: #EDEDED;
+  --foreground-muted: #A1A1A1;
+
+  --accent: rgba(255, 214, 186, 0.15);
+  --border: rgba(255, 255, 255, 0.08);
+}
+
+/* =========================
+   Base Styles
+   ========================= */
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-sans);
+  font-weight: 600;
+}
+
+p {
+  line-height: 1.75;
+  color: var(--foreground-muted);
+}
+
+/* =========================
+   Motion (minimal & calm)
+   ========================= */
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* Subtle float (use sparingly, hero only) */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* =========================
+   Borders & Accents
+   ========================= */
+
+/* Quiet glow — ONLY for focused elements */
+@keyframes glowBorder {
+  0%, 100% {
+    box-shadow: 0 0 0 0 var(--accent);
+    opacity: 0.15;
+  }
+  50% {
+    box-shadow: 0 0 10px 1px var(--accent);
+    opacity: 0.3;
+  }
+}
+
+.animate-glow {
+  animation: glowBorder 3s ease-in-out infinite;
+}
+
+/* Reworked border magic (much calmer) */
+@keyframes borderShift {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 150% 50%; }
+}
+
+.animate-borderMagic {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--accent),
+    transparent
+  );
+  background-size: 150% 100%;
+  border-radius: 1rem;
+  animation: borderShift 6s linear infinite;
+}
+
+/* =========================
+   Particles (scoped utility)
+   ========================= */
+
+/* Use ONLY inside a wrapper, not globally */
+.particles-bg {
+  position: absolute;
+  inset: 0;
+  opacity: 0.12;
+  z-index: -1;
+  pointer-events: none;
+}
+.dark .navbar-gradient {
+  background:
+    /* warm accent glow — left top */
+    radial-gradient(
+      450px circle at 10% 20%,
+      rgba(255, 214, 186, 0.6),
+      transparent 65%
+    ),
+
+    /* soft surface glow — right bottom */
+    radial-gradient(
+      600px circle at 90% 80%,
+      rgba(255, 232, 205, 0.55),
+      transparent 70%
+    ),
+
+    /* base fill */
+    #fff2eb;
+
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+}
+
+
+
+.navbar-gradient {
+  background:
+    /* muted accent — left top */
+    radial-gradient(
+      450px circle at 10% 20%,
+      rgba(255, 214, 186, 0.12),
+      transparent 65%
+    ),
+
+    /* depth anchor — right bottom */
+    radial-gradient(
+      600px circle at 90% 80%,
+      rgba(255, 255, 255, 0.04),
+      transparent 70%
+    ),
+
+    #0f0f0f;
+
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+}
+
+
+
+.hero-gradient {
+  background:
+    radial-gradient(
+      1200px circle at 15% 35%,
+      rgba(255, 214, 186, 0.238),
+      transparent 60%
+    ),
+    linear-gradient(
+      180deg,
+      #0a1b3279 0%,
+      #1b08368d 100%
+    );
+}
+
+.dark  .hero-gradient {
+  background:
+    /* accent light — top left */
+    radial-gradient(
+      1200px circle at 12% 28%,
+      rgba(236, 179, 142, 0.7),
+      transparent 65%
+    ),
+
+    /* surface-soft glow — bottom right */
+    radial-gradient(
+      1100px circle at 88% 82%,
+      rgba(190, 125, 125, 0.849),
+      transparent 60%
+    ),
+
+    /* base background */
+    #fff2eb;
+
+  min-height: 91vh;
+}
+.text-stroke-3 { -webkit-text-stroke: 1.5px black; }
