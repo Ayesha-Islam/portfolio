@@ -16,7 +16,7 @@ const SKILL_DATA = [
       "Prisma",
       "REST APIs",
     ],
-    description: "Designing services, data access, authentication, and API boundaries for maintainable web applications."
+    description: "Building typed APIs, authentication flows, and maintainable data-access boundaries."
   },
   {
     id: "frontend",
@@ -30,7 +30,7 @@ const SKILL_DATA = [
       "HTML",
       "CSS",
     ],
-    description: "Building responsive interfaces that make complex data easy to search, filter, and understand."
+    description: "Building responsive interfaces for searching, filtering, and understanding application data."
   },
   {
     id: "platform",
@@ -44,7 +44,7 @@ const SKILL_DATA = [
       "Cheerio",
       "Git",
     ],
-    description: "Using caching, containers, scraping workflows, and tests to make the Job Scraper dependable and repeatable."
+    description: "Using caching, containers, scraping workflows, and automated tests in the Job Scraper project."
   },
 ]
 
@@ -96,13 +96,13 @@ export default function TechTabs() {
             {/* TEXT SIDE */}
             <div className="md:col-span-5 space-y-4">
               <div className="inline-block border-2 border-black px-2 md:px-3 py-1 text-[8px] md:text-[10px] font-black text-black/80 uppercase tracking-widest">
-                Operational Registry // 0{activeTab + 1}
+                Technical Skills // 0{activeTab + 1}
               </div>
               <h4 className="text-2xl sm:text-3xl md:text-5xl font-black leading-[1.1] text-black tracking-tighter uppercase">
                 {SKILL_DATA[activeTab].description}
               </h4>
               <p className="text-[10px] md:text-sm font-medium text-black/60 uppercase pt-4 border-t-2 border-black/10 leading-relaxed">
-                Applied in a working full-stack product, with <span className="text-black font-black italic underline decoration-2 underline-offset-4 uppercase">Go and Rust currently being explored</span>.
+                Demonstrated through the Job Scraper repository. <span className="text-black font-black italic underline decoration-2 underline-offset-4 uppercase">Go and Rust are currently being explored</span>.
               </p>
             </div>
 

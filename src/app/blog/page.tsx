@@ -3,9 +3,9 @@ const notes = [
     title: "Tracing a Misleading EAI_AGAIN Database Failure",
     label: "Engineering incident // Job Scraper",
     summary:
-      "The scraper repeatedly surfaced a database/DNS-style error even though PostgreSQL was healthy. Tracing the scraper workflow revealed an incomplete dependency container: it provided Prisma, while JobService also required the shared PostgreSQL pool for raw SQL.",
+      "The scraper repeatedly surfaced a database or DNS-style error even though PostgreSQL was healthy. I traced the workflow from the command entry point through dependency creation and found an incomplete container: it provided Prisma while JobService also required the shared PostgreSQL pool for raw SQL.",
     resolution:
-      "I made the scraper use the same fully configured application container as the API, verified Docker service names, and added tests around dependency initialization.",
+      "I made the scraper use the same configured application container as the API, verified Docker service names, and added dependency-initialization tests. The scraper then received every service required by the execution path.",
     lesson:
       "Trace the complete execution path instead of treating a surface-level error message as the root cause.",
   },
@@ -13,7 +13,7 @@ const notes = [
     title: "Choosing a Clear Prisma and Raw SQL Boundary",
     label: "Architecture decision // Data access",
     summary:
-      "The application needs straightforward CRUD as well as flexible search, filters, pagination, and analytics. Treating both workloads as identical made the data layer harder to reason about.",
+      "The application needs straightforward CRUD alongside flexible search, filters, pagination, and analytics. I compared the needs of both query types instead of forcing every operation through one abstraction.",
     resolution:
       "I use Prisma for CRUD-oriented operations and the shared PostgreSQL pool for search, filtering, pagination, and analytics queries.",
     lesson:
@@ -23,9 +23,9 @@ const notes = [
     title: "Caching Without Hiding Stale Data",
     label: "Engineering note // Redis",
     summary:
-      "Caching list, detail, and statistics queries improves repeated reads, but cached data can become stale after write operations.",
+      "List, detail, and statistics queries are cached for repeated reads, but every write creates a consistency question: which cached results may now be stale?",
     resolution:
-      "The Job Scraper uses endpoint-appropriate TTLs and invalidates relevant keys on writes, while treating short-lived eventual consistency as an explicit tradeoff.",
+      "The Job Scraper uses endpoint-appropriate TTLs and invalidates relevant cache keys after writes, while documenting short-lived eventual consistency as an explicit trade-off.",
     lesson:
       "A cache strategy is incomplete until invalidation and consistency expectations are documented.",
   },

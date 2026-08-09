@@ -10,10 +10,10 @@ export default function FeaturedLog() {
   const featured = {
     title: "Tracing a Misleading EAI_AGAIN Database Failure",
     symptom: "EAI_AGAIN",
-    cause: "Missing Pool",
+    cause: "Missing PG Pool",
     category: "ENGINEERING_INCIDENT",
     link: "/blog",
-    excerpt: "A standalone scraper created an incomplete dependency container. Tracing the full execution path revealed that JobService needed the shared PostgreSQL pool—not only the Prisma client."
+    excerpt: "A misleading connection error led me through the complete scraping path. The root cause was an incomplete dependency container that supplied Prisma but omitted the PostgreSQL pool required by JobService."
   }
 
   return (
@@ -22,7 +22,7 @@ export default function FeaturedLog() {
         <div className="flex items-center gap-3 mb-8">
           <div className="w-2 h-2 bg-red-900 animate-pulse" />
           <span className="text-[10px] font-black tracking-[0.4em] text-stone-500 uppercase">
-            Featured_Writing // Engineering_Notes
+            Engineering Note // Debugging
           </span>
         </div>
 

@@ -55,10 +55,10 @@ export default function MangaAbout() {
             viewport={{ once: true }}
             className="text-3xl md:text-5xl font-black leading-[1] tracking-tighter text-stone-100 uppercase"
           >
-            <p>Building software that is</p>
+            <p>Turning one real problem into</p>
             <span className="relative inline-block mt-2 group">
               <span className="relative z-10 group-hover:text-stone-950 transition-colors duration-300">
-                PRACTICAL, TESTED, MAINTAINABLE.
+                AN END-TO-END APPLICATION.
               </span>
               {/* Inversion effect: fills white on hover */}
               <span className="absolute inset-0 bg-stone-100 scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300 z-0" />
@@ -74,9 +74,9 @@ export default function MangaAbout() {
                 01. FLAGSHIP BUILD <span className="text-sm not-italic text-stone-600">{"// JOB SCRAPER"}</span>
               </h3>
               <p className="text-base font-medium leading-snug text-stone-400">
-                I independently built a job aggregation platform that collects
-                listings from eight sources and makes them searchable in one
-                place.
+                Job seekers often search several platforms separately. I built
+                one application that collects listings from eight sources and
+                makes them searchable, filterable, and saveable.
               </p>
             </div>
 
@@ -86,7 +86,7 @@ export default function MangaAbout() {
                 02. ENGINEERING FOCUS <span className="text-sm not-italic text-stone-600">{"// BACKEND"}</span>
               </h3>
               <p className="text-base font-medium leading-snug text-stone-400">
-                I focus on <span className="text-stone-200 font-black italic">clear service boundaries, dependable data access, caching, background jobs, and tests</span> that make applications easier to reason about.
+                The project combines <span className="text-stone-200 font-black italic">scheduled scraping, an Express API, PostgreSQL, Redis caching, Docker, and automated tests</span> in one documented system.
               </p>
             </div>
           </div>

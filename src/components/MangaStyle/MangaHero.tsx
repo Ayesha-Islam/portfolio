@@ -57,10 +57,10 @@ export default function MangaHero() {
               {/* METRICS */}
               <div className="flex flex-wrap gap-3 pt-2">
                 {[
-                  "244 Job Listings",
-                  "8 Data Sources",
-                  "73 Companies",
-                  "124 Tests",
+                  "Job Scraper · 244 Listings",
+                  "Job Scraper · 8 Sources",
+                  "Job Scraper · 73 Companies",
+                  "Job Scraper · 124 Tests",
                 ].map((item) => (
                   <span
                     key={item}

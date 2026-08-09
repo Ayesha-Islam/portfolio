@@ -78,8 +78,11 @@ export function Navbar() {
             </a>
           </div>
 
-          <Link
-            href="/contact"
+          <a
+            href="/Ayesha_Islam_Resume.pdf"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="View Ayesha Islam's resume"
             className="relative ml-6 border-[3px] border-black bg-white px-8 py-2 text-xs font-black text-black uppercase tracking-[0.3em] 
              shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] 
              transition-all overflow-hidden group"
@@ -93,12 +96,12 @@ export function Navbar() {
               }}
             />
             <span className="relative z-10 flex items-center gap-2">
-              CONTACT{" "}
+              RESUME{" "}
               <span className="text-[12px] opacity-40 group-hover:opacity-100 italic transition-opacity">
                 [🔻]
               </span>
             </span>
-          </Link>
+          </a>
         </div>
 
         {/* Mobile Toggle: Rough cut */}
@@ -166,13 +169,16 @@ export function Navbar() {
             </div>
 
             <div className="mt-12 space-y-5 relative z-10 border-t border-white/20 pt-8">
-              <Link
-                href="/contact"
+              <a
+                href="/Ayesha_Islam_Resume.pdf"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="View Ayesha Islam's resume"
                 onClick={() => setOpen(false)}
                 className="text-2xl font-black underline decoration-3 underline-offset-8 uppercase italic hover:text-gray-400"
               >
-                GET_IN_TOUCH
-              </Link>
+                VIEW_RESUME
+              </a>
               <div className="flex mt-4 gap-8 font-bold uppercase tracking-widest text-xs">
                 <a
                   href="https://www.linkedin.com/in/ayesha-islam-b4b988212/"

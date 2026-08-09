@@ -22,7 +22,7 @@ export const Footer = () => (
         {/* PANEL 1: THE TITLE (Aggressive JJK Logo Style) */}
         <div className="md:col-span-7 space-y-4">
           <div className="inline-block bg-black text-white text-[10px] font-black tracking-[0.5em] px-3 py-1 mb-2">
-            CONTACT // COLLABORATION
+            CONTACT // OPPORTUNITIES
           </div>
           <h2 className="font-bebas text-7xl md:text-[10rem] leading-[0.8] tracking-tighter italic text-black uppercase">
             AYESHA <br />
@@ -41,7 +41,7 @@ export const Footer = () => (
                <Zap size={10} fill="black" /> TypeScript · Node.js · PostgreSQL · Next.js
              </p>
              <p className="font-bold text-lg text-black leading-tight uppercase">
-               Building reliable backend systems that turn fragmented data into useful products.
+               Building full-stack applications with a strong backend focus.
              </p>
            </div>
            
@@ -59,7 +59,7 @@ export const Footer = () => (
       {/* PANEL 3: THE ACTION (The "Black Flash" Resume Button) */}
       <div className="mt-20 flex flex-col md:flex-row justify-between items-center gap-12">
         <div className="flex flex-col gap-1">
-          <span className="font-black text-xs uppercase tracking-[0.4em] text-black">Inquiries</span>
+          <span className="font-black text-xs uppercase tracking-[0.4em] text-black">Email</span>
           <a href="mailto:ayeshaislam.dev@gmail.com" className="text-2xl md:text-4xl font-bebas text-black hover:italic transition-all">
             ayeshaislam.dev@gmail.com
           </a>

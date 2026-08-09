@@ -75,7 +75,7 @@ export default function FeaturedProjects() {
           viewport={{ once: true }}
           className="font-bebas text-5xl sm:text-7xl md:text-9xl text-white/60 leading-none italic uppercase "
         >
-          ACTIVE <br /> <span className="text-transparent [-webkit-text-stroke:1px_white] md:[-webkit-text-stroke:2px_white]">PROJECTS</span>
+          SELECTED <br /> <span className="text-transparent [-webkit-text-stroke:1px_white] md:[-webkit-text-stroke:2px_white]">PROJECTS</span>
         </motion.h2>
         <div className="h-[2px] w-full md:flex-grow bg-black/10 mb-2 md:mb-4 relative overflow-hidden">
           <motion.div 
@@ -93,7 +93,7 @@ export default function FeaturedProjects() {
           title="Job Scraper Platform"
           id="job-scraper"
           label="Flagship Project // Dec 2025–Jul 2026"
-          desc="A tested job aggregation platform with eight scraping sources, search, filtering, pagination, authentication, saved jobs, caching, and background workflows."
+          desc="An independently built job aggregation platform with scheduled scraping, PostgreSQL data access, Redis caching, Docker-based local services, and 124 automated tests."
           tech={["Next.js", "Node.js", "TypeScript", "PostgreSQL", "Redis", "Docker"]}
         />
 
@@ -101,7 +101,7 @@ export default function FeaturedProjects() {
           title="Developer Portfolio"
           id="developer-portfolio"
           label="Current Project // Jul 2026–Present"
-          desc="A recruiter-focused portfolio built with the Next.js App Router, reusable components, responsive navigation, accessible motion, and clear project storytelling."
+          desc="A responsive Next.js application built to present my software projects, engineering decisions, and technical growth."
           tech={["Next.js", "React", "TypeScript", "CSS"]}
         />
       </div>
@@ -109,7 +109,7 @@ export default function FeaturedProjects() {
       {/* FOOTER DETAIL */}
       <div className="mt-8 md:mt-12 flex justify-end">
         <div className="flex items-center gap-2 text-[8px] md:text-[10px] font-black uppercase tracking-[0.3em] md:tracking-[0.5em] text-black/30">
-          <Terminal size={12} /> Two Projects // Evidence Over Volume
+          <Terminal size={12} /> Project Evidence // Source Available
         </div>
       </div>
     </section>

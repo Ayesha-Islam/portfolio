@@ -53,19 +53,20 @@ export default function AboutPage() {
             <div className="border-l-[8px] border-black pl-6">
               <h2 className="font-bebas text-4xl uppercase italic">How I work</h2>
               <p className="mt-4 text-base font-medium text-black/70">
-                I&apos;m Ayesha Islam, a full-stack developer who enjoys building
-                software that&apos;s practical, maintainable, and designed to
-                solve real problems. I value correctness before cleverness,
-                clear boundaries, reproducible environments, and tests that
-                protect important behavior.
+                I&apos;m Ayesha Islam, a backend-focused full-stack developer. I
+                independently built an end-to-end job aggregation application
+                using TypeScript, Node.js, PostgreSQL, Redis, Docker, and Next.js.
+                I value clear dependencies, maintainable data access,
+                reproducible environments, and automated tests.
               </p>
             </div>
 
             <div>
               <h2 className="font-bebas text-3xl uppercase italic">Current goal</h2>
               <p className="mt-3 text-sm font-bold text-black/65">
-                I&apos;m seeking my first software engineering opportunity in a
-                junior backend or full-stack role with a backend emphasis.
+                I&apos;m seeking my first junior full-stack or Node.js backend role,
+                where I can contribute to real products and learn from
+                experienced engineers.
               </p>
             </div>
           </aside>
@@ -76,13 +77,13 @@ export default function AboutPage() {
                 Technical journey // 01
               </p>
               <h2 className="mt-3 font-bebas text-5xl uppercase italic">
-                Building My First Production-Style Application
+                Building an End-to-End Job Platform
               </h2>
               <p className="mt-5 border-l-4 border-black pl-5 text-sm font-semibold text-black/70">
-                Job Scraper began as a way to remove the friction of searching
-                separate job platforms. It grew into an end-to-end system with
-                scraping workflows, a typed API, PostgreSQL data access, Redis
-                caching, authentication, saved jobs, Docker, and automated tests.
+                Job Scraper began with a practical problem: job seekers often
+                search several platforms separately. I built one application
+                that collects listings from eight sources and makes them
+                searchable, filterable, and saveable.
               </p>
             </div>
 
@@ -94,11 +95,11 @@ export default function AboutPage() {
                 Growing Beyond the Application
               </h2>
               <p className="mt-5 border-l-4 border-black pl-5 text-sm font-semibold text-black/70">
-                The project pushed me to think beyond features: how dependencies
-                are assembled, where raw SQL is appropriate, how cache
-                invalidation affects consistency, and how documentation makes
-                engineering decisions easier to revisit. I&apos;m now deepening
-                those backend fundamentals while exploring Go and Rust.
+                Building the project taught me to examine dependency setup,
+                choose deliberate boundaries between Prisma and raw SQL, manage
+                cache invalidation, and document technical decisions. I&apos;m now
+                strengthening those backend fundamentals while exploring Go
+                and Rust.
               </p>
             </div>
 

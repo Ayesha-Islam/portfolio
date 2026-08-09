@@ -36,9 +36,9 @@ export default function ContactPage() {
             Open to my first software engineering opportunity.
           </h2>
           <p className="mt-8 text-sm font-semibold leading-relaxed text-stone-400">
-            I&apos;m interested in junior backend and full-stack roles where I
-            can contribute to real products, learn from experienced engineers,
-            and continue strengthening my backend fundamentals.
+            I&apos;m seeking a junior backend or full-stack role where I can
+            contribute to real products, strengthen my engineering fundamentals,
+            and learn from experienced developers.
           </p>
           <div className="mt-12 border-t border-stone-800 pt-6 text-[10px] font-black uppercase tracking-[0.3em] text-stone-500">
             Faisalabad // Punjab // Pakistan

@@ -16,9 +16,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ayesha Islam | Backend-Focused Full-Stack Developer",
+  title: "Ayesha Islam | Junior Full-Stack Developer",
   description:
-    "Portfolio of Ayesha Islam, a backend-focused full-stack developer building reliable web applications with TypeScript, Node.js, PostgreSQL, Docker, and Next.js.",
+    "Portfolio of Ayesha Islam, a junior full-stack developer focused on TypeScript, Node.js, PostgreSQL, Docker, and Next.js.",
   keywords: [
     "Ayesha Islam",
     "Full-Stack Developer",
@@ -30,9 +30,9 @@ export const metadata: Metadata = {
     "Faisalabad Software Developer",
   ],
   openGraph: {
-    title: "Ayesha Islam | Backend-Focused Full-Stack Developer",
+    title: "Ayesha Islam | Junior Full-Stack Developer",
     description:
-      "I build reliable backend systems that turn fragmented data into useful products.",
+      "I build full-stack applications with a strong backend focus, turning fragmented data into useful, searchable products.",
     type: "website",
   },
 };

@@ -17,7 +17,7 @@ export default function InitiateButton() {
     >
       <div className="text-right">
         <span className="block text-stone-500 text-[9px] font-black uppercase tracking-[0.5em] mb-2 italic">
-          Open_To_Opportunities
+          Contact Me
         </span>
         <span className="block font-bebas text-5xl md:text-7xl text-stone-100 italic leading-none group-hover:text-red-900 transition-colors">
           CONNECT
