@@ -16,7 +16,7 @@ const projects = [
       "Solution — Scheduled Puppeteer and Cheerio scrapers collect listings into one application",
       "Architecture — A Next.js frontend communicates with a Node.js and Express API backed by PostgreSQL",
       "Data decisions — Prisma handles CRUD, raw SQL handles search and analytics, and Redis caches frequent reads",
-      "Evidence — Docker-based local services and 124 tests; no public live demo is currently available",
+      "Evidence — Docker-based local services and 124 tests; public live demo is available",
     ],
     tech: [
       "Next.js",
