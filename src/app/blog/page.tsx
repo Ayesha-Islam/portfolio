@@ -1,7 +1,7 @@
 const notes = [
   {
     title: "Tracing a Misleading EAI_AGAIN Database Failure",
-    label: "Engineering incident // Job Scraper",
+    label: "Engineering incident // JobLens",
     summary:
       "The scraper repeatedly surfaced a database or DNS-style error even though PostgreSQL was healthy. I traced the workflow from the command entry point through dependency creation and found an incomplete container: it provided Prisma while JobService also required the shared PostgreSQL pool for raw SQL.",
     resolution:
@@ -25,7 +25,7 @@ const notes = [
     summary:
       "List, detail, and statistics queries are cached for repeated reads, but every write creates a consistency question: which cached results may now be stale?",
     resolution:
-      "The Job Scraper uses endpoint-appropriate TTLs and invalidates relevant cache keys after writes, while documenting short-lived eventual consistency as an explicit trade-off.",
+      "The JobLens uses endpoint-appropriate TTLs and invalidates relevant cache keys after writes, while documenting short-lived eventual consistency as an explicit trade-off.",
     lesson:
       "A cache strategy is incomplete until invalidation and consistency expectations are documented.",
   },

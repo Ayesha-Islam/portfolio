@@ -80,7 +80,7 @@ export default function AboutPage() {
                 Building an End-to-End Job Platform
               </h2>
               <p className="mt-5 border-l-4 border-black pl-5 text-sm font-semibold text-black/70">
-                Job Scraper began with a practical problem: job seekers often
+                JobLens began with a practical problem: job seekers often
                 search several platforms separately. I built one application
                 that collects listings from eight sources and makes them
                 searchable, filterable, and saveable.

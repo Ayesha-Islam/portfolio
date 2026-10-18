@@ -96,14 +96,6 @@ export default function FeaturedProjects() {
           desc="An independently built job aggregation platform with scheduled scraping, PostgreSQL data access, Redis caching, Docker-based local services, and 124 automated tests."
           tech={["Next.js", "Node.js", "TypeScript", "PostgreSQL", "Redis", "Docker"]}
         />
-
-        <ProjectCard
-          title="Developer Portfolio"
-          id="developer-portfolio"
-          label="Current Project // Jul 2026–Present"
-          desc="A responsive Next.js application built to present my software projects, engineering decisions, and technical growth."
-          tech={["Next.js", "React", "TypeScript", "CSS"]}
-        />
       </div>
 
       {/* FOOTER DETAIL */}
