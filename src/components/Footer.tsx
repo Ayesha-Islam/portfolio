@@ -60,8 +60,8 @@ export const Footer = () => (
       <div className="mt-20 flex flex-col md:flex-row justify-between items-center gap-12">
         <div className="flex flex-col gap-1">
           <span className="font-black text-xs uppercase tracking-[0.4em] text-black">Email</span>
-          <a href="mailto:ayeshaislam.dev@gmail.com" className="text-2xl md:text-4xl font-bebas text-black hover:italic transition-all">
-            ayeshaislam.dev@gmail.com
+          <a href="mailto:ayeshaislam.tech@gmail.com" className="text-2xl md:text-4xl font-bebas text-black hover:italic transition-all">
+            ayeshaislam.tech@gmail.com
           </a>
         </div>
 

@@ -4,7 +4,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Check, Copy, Github, Linkedin, Mail } from "lucide-react";
 
-const email = "ayeshaislam.dev@gmail.com";
+const email = "ayeshaislam.tech@gmail.com";
 
 export default function ContactPage() {
   const [copied, setCopied] = useState(false);

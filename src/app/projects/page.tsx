@@ -5,8 +5,8 @@ import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
-    id: "job-scraper",
-    name: "Job Scraper Platform",
+    id: "joblens",
+    name: "Joblens Platform",
     period: "Independent Full-Stack Project // Dec 2025–Jul 2026",
     description:
       "An independently built full-stack application that brings job listings from eight sources into one searchable, filterable, and saveable interface.",
@@ -30,23 +30,8 @@ const projects = [
       "Docker",
       "Vitest",
     ],
-    link: "https://github.com/Ayesha-Islam/Job-scraper",
-  },
-  {
-    id: "developer-portfolio",
-    name: "Developer Portfolio",
-    period: "Personal Project // Jul 2026–Present",
-    description:
-      "A responsive Next.js application built to present my software projects, engineering decisions, and technical growth.",
-    evidence: ["Next.js App Router", "TypeScript", "Responsive UI", "Accessible motion"],
-    features: [
-      "Built with the Next.js App Router and TypeScript",
-      "Uses reusable React components and route metadata",
-      "Includes responsive navigation for desktop and mobile",
-      "Supports reduced-motion preferences",
-    ],
-    tech: ["Next.js", "React", "TypeScript", "CSS", "Framer Motion"],
-    link: "https://github.com/Ayesha-Islam/portfolio",
+    link: "https://github.com/Ayesha-Islam/Joblens",
+    demoURL: "https://job-lens-gules.vercel.app",
   },
 ];
 
@@ -122,6 +107,16 @@ export default function ProjectsPage() {
                     <span className="flex items-center gap-3"><Github size={18} /> View repository</span>
                     <ExternalLink size={18} />
                   </a>
+                  {project.demoURL && (
+                    <a
+                      href={project.demoURL}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex items-center justify-between border-2 border-white px-4 py-3 font-black uppercase tracking-wider transition-colors hover:bg-white hover:text-black"
+                    >
+                      <span className="flex items-center gap-3"><ExternalLink size={18} /> View live demo</span>
+                    </a>
+                  )}
                 </aside>
               </div>
             </motion.article>

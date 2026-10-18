@@ -3,7 +3,7 @@
 import {motion} from "framer-motion";
 
 export default function InitiateButton() {
-  const email = "ayeshaislam.dev@gmail.com";
+  const email = "ayeshaislam.tech@gmail.com";
   const subject = "Software engineering opportunity";
   const body = "Hi Ayesha,\n\nI visited your portfolio and would like to discuss a software engineering opportunity.";
 

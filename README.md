@@ -36,4 +36,4 @@ npm run build
 
 - GitHub: [Ayesha-Islam](https://github.com/Ayesha-Islam)
 - LinkedIn: [Ayesha Islam](https://www.linkedin.com/in/ayesha-islam-b4b988212/)
-- Email: [ayeshaislam.dev@gmail.com](mailto:ayeshaislam.dev@gmail.com)
+- Email: [ayeshaislam.tech@gmail.com](mailto:ayeshaislam.tech@gmail.com)
